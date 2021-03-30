@@ -27,7 +27,7 @@ En attendant, dans File > Settings de PhpStorm, on peut aller dans
 Languages & Frameworks > PHP > Symfony et remplacer dans "Web Directory" 
 le "web" par "public". Puis dans base.html.twig, on va remplacer le lien 
 dans le href appelant font-awesome par `href="{{ asset('css/font-awesome.css') }}"`, 
-de même pour celui de styles par `href="{{ asset('css/styles.css') }}"`. 
+de même pour celui de styles par `href="{{ asset('css/styles.css') }}"`.  
 D'une manière générale, il est recommandé d'appeler tous les liens 
 statiques css par une fonction `asset()`. Pour le moment cette fonction 
 ne change rien au résultat. Mais à terme, cette fonction permettra 
