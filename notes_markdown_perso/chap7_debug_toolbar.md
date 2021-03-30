@@ -31,7 +31,7 @@ mais en bien plus classe (coloré, indenté, etc). Surtout concernant les
 tableaux !! De plus, on peut expand certains classes pour en voir leur contenu 
 comme pour les objets JavaScript qu'on affichait dans la console du 
 navigateur.  
-Pour ce faire, on va appliquer la commande `dump($comments, $this);` dans ArticleController.
+Pour ce faire, on va appliquer la commande `dump($comments, $this);` dans ArticleController dans notre cas. 
 
 On peut également utiliser `dump()` dans un fichier Twig.  
 En exécutant `{{ dump() }}` directement dans un fichier 
