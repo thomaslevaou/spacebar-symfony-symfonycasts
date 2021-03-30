@@ -18,5 +18,6 @@ Mais se baser sur le nom interne auto-généré n'est pas optimal, car il peut c
 Pour pallier à ce problème, on va explicitement nommer la route dans le deuxième paramètre de l'annotation @Route :
 `@Route("/", name="app_homepage")` et appeler le lien href avec ce nouveau nom: `href="{{ path('app_homepage') }}"`.  
 
-Pour les routes avec une slug, on doit préciser la valeur de celle-ci via le deuxième argument de path: 
-`href="{{ path('article_show', { slug: 'why-asteroids-taste-like-bacon') }}"`
+Pour les routes avec une slug, on doit préciser la valeur de celle-ci via le deuxième argument de path, qu'on transmet 
+d'une manière analogue à ce qu'on pouvait faire avec $t en Vue: 
+`href="{{ path('article_show', { slug: 'why-asteroids-taste-like-bacon'}) }}"`
