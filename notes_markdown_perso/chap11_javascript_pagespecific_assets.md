@@ -48,4 +48,4 @@ sur ce fichier), on va créer un nouveau `{% block javascripts %}` avec le code 
 ```
 
 La commande `{{ parent() }}` étant là pour appeler le `{% block javascripts %}` parent (celui 
-de `base.html.twig`. 
+de `base.html.twig`). 
