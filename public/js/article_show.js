@@ -7,6 +7,11 @@ $(document).ready(function() {
         // filling or emptying the heart icon depending on the previous value
         $link.toggleClass('fa-heart-o').toggleClass('fa-heart');
 
-        $('.js-like-article-count').html('TEST');
+        $.ajax({
+            method: 'POST',
+            url: $link.attr('href')
+        }).done(function(data) {
+            $('.js-like-article-count').html(data.hearts);
+        })
     });
 });
